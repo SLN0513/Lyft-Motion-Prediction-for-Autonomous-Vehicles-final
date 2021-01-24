@@ -59,7 +59,7 @@ which results in the loss
 
 
 ## Learning section<a name="learning_section"></a>
-1.BGD batch gradient descent
+	1.BGD batch gradient descent
 
 2.SGD tochastic gradient descent 
 
@@ -69,6 +69,8 @@ which results in the loss
 
 Learning rate should be properly chosen, as a small learning rate would lead to a slow convergency and a fast learning rate would make the loss function fluctuate
 
+## Method <a name="Method"></a>
+
 ## Modeling <a name="modeling"></a>
 
 # 1 .pytorch_neg_multi_log_likelihood_batch   ...  
@@ -77,5 +79,7 @@ Learning rate should be properly chosen, as a small learning rate would lead to 
 # 4.class LyftMultiModel(nn.Module):  ...
 # 5.visualize_trajectory  ...
 
+
+## Further discussion <a name="further_discussion"></a>
 
 ![alt text](https://github.com/xuyuan1/Lyft-Motion-Prediction-for-Autonomous-Vehicles/blob/main/rank.png)
