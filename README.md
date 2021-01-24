@@ -83,6 +83,29 @@ which results in the loss
 
 	The general value of γ is about 0.9.
 
+	6. Nesterov accelerated gradient(NAG)
+
+	This is a variation on Momentum, and the idea is, you estimate the parameters, and then you use 
+	the estimated parameters to calculate the error
+
+	NAG can make RNN perform better on many tasks.
+
+	So far, we can adjust the speed according to the gradient of the loss function and accelerate the SGD 
+	when the gradient is updated.
+
+	We also want to be able to update different parameters to varying degrees depending on their importance.
+
+	7. Saddle point
+	
+	The curve, surface, or hypersurface of the saddle point neighborhood of a smooth function is located on 
+	different sides of the tangent to this point.
+
+	For example, this two-dimensional graph, like a saddle: it bends up in the X-axis, it bends down in the Y-axis, 
+	and the saddle point is 0,0.
+
+	![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/鞍点.png)
+	
+
 ## Method <a name="Method"></a>
 	If the data is sparse, the adaptive methods should be adopted, i.e., ADAGRAD, ADADELTA, RMSProp, ADAM.
 	
