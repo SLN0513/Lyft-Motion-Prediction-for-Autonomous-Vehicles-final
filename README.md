@@ -217,7 +217,7 @@ Hinge losses are often used in dichloric problems to evaluate vector machine alg
   ### Cross entropy
 Cross entropy comes from information theory and is a widely used loss function in classification problems. The cross entropy describes the distance between two probability distributions. The closer the two probability distributions are, the smaller their cross entropy will be. The cross-entropy loss function is mainly applied to dichotomy problems, and its predicted value is a probability value in the range of [0,1].
 
-![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/crossen tropy.png)
+![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/crossentropy.png)
 
 
 ## Method <a name="Method"></a>
