@@ -171,6 +171,11 @@ which results in the loss
 ## Activation function <a name="activation_function"></a>
 **Simply put, an activation function is a function that is added into an artificial neural network in order to help the network learn complex patterns in the data.**
   ### Sigmoid
+Sigmoid function, also known as S-type function, can map the entire real interval to (0,1) interval, so it is often used to calculate probability. It is also an activation function that is often used in traditional neural networks.
+
+Advantages of the Sigmoid activation function: the mapping interval of the output (0,1) is monotonically continuous, which is very suitable for the output layer and is easy to differentiate.
+
+Disadvantages of the Sigmoid activation function: it has soft saturation, that is, as the input x tends to infinity, its derivative tends to zero, which can easily cause the gradient to disappear.
 
 
 
