@@ -9,6 +9,7 @@ One such challenge is building models that reliably predict the movement of traf
 * [Evaluation](#evaluation)
 * [Learning section](#learning_section)
 * [Activation function](#activation_function)
+* [Loss function](#loss_function)
 * [Methods](#methods)
 * [Modeling](#modeling)
 * [Further Discussion](#further_discussion)
@@ -177,7 +178,21 @@ Advantages of the Sigmoid activation function: the mapping interval of the outpu
 
 Disadvantages of the Sigmoid activation function: it has soft saturation, that is, as the input x tends to infinity, its derivative tends to zero, which can easily cause the gradient to disappear.
 
+![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/图片4.png)
 
+  ### Tanh
+Tanh is a hyperbolic tangent function that maps the entire real interval to (-1,1), and tanh has soft saturation. Its output is centered on 0. Tanh converges faster than sigmoid, and tanh also has the problem of gradient disappearance due to the existence of soft saturation.
+![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/图片5.png)
+
+  ### Relu
+The output of the relu function is always 0 when x<0. Since the derivative of ReLU function is 1 when x>0, ReLU function can keep the gradient attenuating continuously when x>0. So Relu function could alleviate the problem of gradient disappearance, accelerate the convergence rate, and make the neural network have sparse expression ability, which are also the reasons why ReLU activation function can be used in deep neural network.
+![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/图片6.png)
+
+  ### Softmax
+The Softmax activation function is a normalized exponential function. The output of a neuron depends not only on its own input value, but also on the sum of the inputs of all other neurons that exist in the layer.
+
+## Loss function <a name="loss_function"></a>
+**Loss function is a very important content in machine learning, which measures the difference between the output value of the model and the target value. In other words, it is an important indicator to evaluate the effect of the model. The smaller the loss function is, the better the robustness of the model is.When training the model in TensorFlow, the loss function tells TensorFlow whether the predicted result is better or worse than the target result. In many cases, sample data and target data for model training are given, and the loss function is to compare the difference between the predicted value and the given target value.**
 
 ## Method <a name="Method"></a>
 	If the data is sparse, the adaptive methods should be adopted, i.e., ADAGRAD, ADADELTA, RMSProp, ADAM.
