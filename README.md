@@ -59,18 +59,19 @@ which results in the loss
 
 
 ## Learning section<a name="learning_section"></a>
-	1. BGD batch gradient descent
+	
+1. BGD batch gradient descent
 
-	2.SGD tochastic gradient descent 
+2.SGD tochastic gradient descent 
 
-	3. MBGD minibatch gradient descent
+3. MBGD minibatch gradient descent
 
-	4. Learning rate 
+4. Learning rate 
 
 	Learning rate should be properly chosen, as a small learning rate would lead to a slow convergency and 
 	a fast learning rate would make the loss function fluctuate
 	
-	5. Momentum
+5. Momentum
 	Momentum is similar to the concept of Momentum in physics, which means that the gradients of previous 
 	times are also involved. In order to represent momentum, a new variable V (Velocity) is introduced. V is the 
 	accumulation of previous gradients, but there is a certain attenuation in each turn.
@@ -83,7 +84,7 @@ which results in the loss
 
 	The general value of γ is about 0.9.
 
-	6. Nesterov accelerated gradient(NAG)
+6. Nesterov accelerated gradient(NAG)
 
 	This is a variation on Momentum, and the idea is, you estimate the parameters, and then you use 
 	the estimated parameters to calculate the error
@@ -95,7 +96,7 @@ which results in the loss
 
 	We also want to be able to update different parameters to varying degrees depending on their importance.
 
-	7. Saddle point
+7. Saddle point
 	
 	The curve, surface, or hypersurface of the saddle point neighborhood of a smooth function is located on 
 	different sides of the tangent to this point.
