@@ -171,6 +171,7 @@ which results in the loss
 ## Activation function <a name="activation_function"></a>
 
 **Simply put, an activation function is a function that is added into an artificial neural network in order to help the network learn complex patterns in the data.**
+  
   ###Sigmoid
 
 
