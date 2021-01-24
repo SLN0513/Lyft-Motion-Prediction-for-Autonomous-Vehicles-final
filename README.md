@@ -59,19 +59,44 @@ which results in the loss
 
 
 ## Learning section<a name="learning_section"></a>
-	1.BGD batch gradient descent
+	1. BGD batch gradient descent
 
 	2.SGD tochastic gradient descent 
 
-	3.MBGD minibatch gradient descent
+	3. MBGD minibatch gradient descent
 
-	4.Learning rate 
+	4. Learning rate 
 
 	Learning rate should be properly chosen, as a small learning rate would lead to a slow convergency and 
 	a fast learning rate would make the loss function fluctuate
+	
+	5. Momentum
+	Momentum is similar to the concept of Momentum in physics, which means that the gradients of previous 
+	times are also involved. In order to represent momentum, a new variable V (Velocity) is introduced. V is the 
+	accumulation of previous gradients, but there is a certain attenuation in each turn.
+
+	When the front and back gradient direction is consistent, learning can be accelerated
+
+	When the front and back gradient direction is not consistent, the shock can be suppressed
+
+	Hyperparameter setting value:
+
+	The general value of γ is about 0.9.
 
 ## Method <a name="Method"></a>
+	If the data is sparse, the adaptive methods should be adopted, i.e., ADAGRAD, ADADELTA, RMSProp, ADAM.
+	
+	RMSProp, Adadelta, and Adam have similar effects in many cases.
+	
+	Adam added biase-correction and momentum on the basis of RMSprop.
+	
+	As the gradient becomes sparse, ADAM performs better than RMSProp.
+	
+	Overall, Adam is the best choice.
 
+	A lot of papers use SGD, or without momentum. SGD can reach a minimum value, but it takes 
+	longer time than other algorithms and can get stuck at saddle points. If faster convergence is needed, or deeper 
+	and more complex neural networks are trained, an adaptive algorithm is needed.
 ## Modeling <a name="modeling"></a>
 
 # 1 .pytorch_neg_multi_log_likelihood_batch   ...  
