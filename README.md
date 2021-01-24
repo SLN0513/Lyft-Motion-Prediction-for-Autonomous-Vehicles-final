@@ -182,10 +182,12 @@ Disadvantages of the Sigmoid activation function: it has soft saturation, that i
 
   ### Tanh
 Tanh is a hyperbolic tangent function that maps the entire real interval to (-1,1), and tanh has soft saturation. Its output is centered on 0. Tanh converges faster than sigmoid, and tanh also has the problem of gradient disappearance due to the existence of soft saturation.
+
 ![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/图片5.png)
 
   ### Relu
 The output of the relu function is always 0 when x<0. Since the derivative of ReLU function is 1 when x>0, ReLU function can keep the gradient attenuating continuously when x>0. So Relu function could alleviate the problem of gradient disappearance, accelerate the convergence rate, and make the neural network have sparse expression ability, which are also the reasons why ReLU activation function can be used in deep neural network.
+
 ![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/图片6.png)
 
   ### Softmax
@@ -193,6 +195,29 @@ The Softmax activation function is a normalized exponential function. The output
 
 ## Loss function <a name="loss_function"></a>
 **Loss function is a very important content in machine learning, which measures the difference between the output value of the model and the target value. In other words, it is an important indicator to evaluate the effect of the model. The smaller the loss function is, the better the robustness of the model is.When training the model in TensorFlow, the loss function tells TensorFlow whether the predicted result is better or worse than the target result. In many cases, sample data and target data for model training are given, and the loss function is to compare the difference between the predicted value and the given target value.**
+
+	**The loss function of regression model**
+
+	L1 is positive then loss function (absolute value loss function)
+
+	The L1 is positive then loss function is the absolute value of the difference between the predicted value and the target value
+
+	L2 is positive then loss function (i.e. Euler loss function)
+
+	The L2 is positive then loss function is the sum of squares of the difference between the predicted value and the target value
+
+![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/L1L2.png)
+
+  ### Hinge
+Hinge losses are often used in dichloric problems to evaluate vector machine algorithms, but sometimes neural network algorithms as well
+
+![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/hinge.png)
+
+  ### Cross entropy
+Cross entropy comes from information theory and is a widely used loss function in classification problems. The cross entropy describes the distance between two probability distributions. The closer the two probability distributions are, the smaller their cross entropy will be. The cross-entropy loss function is mainly applied to dichotomy problems, and its predicted value is a probability value in the range of [0,1].
+
+![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/crossen tropy.png)
+
 
 ## Method <a name="Method"></a>
 	If the data is sparse, the adaptive methods should be adopted, i.e., ADAGRAD, ADADELTA, RMSProp, ADAM.
