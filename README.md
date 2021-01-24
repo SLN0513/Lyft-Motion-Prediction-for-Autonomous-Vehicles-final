@@ -8,6 +8,7 @@ One such challenge is building models that reliably predict the movement of traf
 * [Predicting](#predicting)
 * [Evaluation](#evaluation)
 * [Learning section](#learning_section)
+* [Activation function](#activation_function)
 * [Methods](#methods)
 * [Modeling](#modeling)
 * [Further Discussion](#further_discussion)
@@ -164,6 +165,16 @@ which results in the loss
 
 **In both cases, Adagrad, Adadelta, RMSProp found the right direction almost quickly and converged quite quickly, while the other methods were either slow or took a lot of detours to find it.**
 **It can be seen from the figure that the adaptive learning rate method, namely ADAGRAD, ADADELTA, RMSProp, ADAM, is more suitable and has better convergence in this situation.**
+
+
+
+## Activation function <a name="activation_function"></a>
+
+**Simply put, an activation function is a function that is added into an artificial neural network in order to help the network learn complex patterns in the data.**
+
+###Sigmoid
+
+
 
 ## Method <a name="Method"></a>
 	If the data is sparse, the adaptive methods should be adopted, i.e., ADAGRAD, ADADELTA, RMSProp, ADAM.
