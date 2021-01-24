@@ -72,6 +72,7 @@ which results in the loss
 	a fast learning rate would make the loss function fluctuate
 	
 **5. Momentum**
+	
 	Momentum is similar to the concept of Momentum in physics, which means that the gradients of previous 
 	times are also involved. In order to represent momentum, a new variable V (Velocity) is introduced. V is the 
 	accumulation of previous gradients, but there is a certain attenuation in each turn.
