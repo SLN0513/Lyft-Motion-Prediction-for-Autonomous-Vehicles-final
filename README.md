@@ -106,7 +106,25 @@ which results in the loss
 
 	
 ![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/鞍点.png)
+
+**8. RMSPropAdaGrad**
+
+	This algorithm can do a larger update parameters of low frequency, less done on the high frequency of updates, 
+	and therefore, its performance for sparse data is very good, especially for improving the robustness of SGD, such as 
+	identification of Youtube video inside of the cat, training GloVe word embeddings, as they all need more updates 
+	on the characteristics of low frequency.
+
+	Adagrad has the advantage of reducing manual adjustment of learning rate
+
+	Super parameter setting value:
+
+	Usually η is 0.01.
+
+	Disadvantages:
+
+	The disadvantage is that the denominator keeps accumulating, so the learning rate shrinks and eventually becomes very small.
 	
+![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/图片1.png)
 
 ## Method <a name="Method"></a>
 	If the data is sparse, the adaptive methods should be adopted, i.e., ADAGRAD, ADADELTA, RMSProp, ADAM.
