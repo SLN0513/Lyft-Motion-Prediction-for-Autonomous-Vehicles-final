@@ -41,6 +41,7 @@ Note: The following is a brief excerpt of our metrics page in the L5Kit reposito
 We calculate the negative log-likelihood of the ground truth data given the multi-modal predictions. Let us take a closer look at this. Assume, ground truth positions of a sample trajectory are
 
 
+![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/gif.gif)
 
 and we predict K hypotheses, represented by means
 
