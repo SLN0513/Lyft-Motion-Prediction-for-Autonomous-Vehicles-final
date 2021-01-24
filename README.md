@@ -149,9 +149,9 @@ which results in the loss
 
 **10. Adam(Adaptive Moment Estimation)**
 
-	This algorithm is another way to calculate the adaptive learning rate for each parameter. 
-	At present in the field of DL, is the most common optimizer. The main advantage is that after 
-	bias correction, the learning rate of each iteration has a certain range, which makes the parameters relatively stable.
+	This algorithm is another way to calculate the adaptive learning rate for each parameter. At present in the field 
+	of DL, Adam is the most common optimizer. The main advantage is that after bias correction, the learning rate 
+	of each iteration has a certain range, which makes the parameters relatively stable.
 
 	Hyperparameter setting value:
 
@@ -161,6 +161,10 @@ which results in the loss
 
 ![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/图片2.png)
 ![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/图片3.png)
+
+**
+In both cases, Adagrad, Adadelta, RMSProp found the right direction almost quickly and converged quite quickly, while the other methods were either slow or took a lot of detours to find it.
+It can be seen from the figure that the adaptive learning rate method, namely ADAGRAD, ADADELTA, RMSProp, ADAM, is more suitable and has better convergence in this situation.**
 
 ## Method <a name="Method"></a>
 	If the data is sparse, the adaptive methods should be adopted, i.e., ADAGRAD, ADADELTA, RMSProp, ADAM.
