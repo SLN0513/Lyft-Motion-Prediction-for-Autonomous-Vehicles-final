@@ -127,6 +127,41 @@ which results in the loss
 	
 ![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/图片1.png)
 
+**9. RMSProp**
+
+	RMSProp decays r by a certain percentage each turn by introducing a decaying factor, similar to what happens in Momentum.
+
+	Hyperparameter setting value:
+
+	It is recommended to set γγ as 0.9 and αα as 0.001.
+
+	Advantages:
+
+	Compared with Adagrad, this method is a good solution to the problem of premature ending in deep learning
+
+	It is suitable for non-stationary targets and has good effect on RNN
+
+	Disadvantages:
+
+	A new superparameter, attenuation coefficient, is introduced
+
+	It still depends on the global learning rate
+
+**10. Adam(Adaptive Moment Estimation)**
+
+	This algorithm is another way to calculate the adaptive learning rate for each parameter. 
+	At present in the field of DL, is the most common optimizer. The main advantage is that after 
+	bias correction, the learning rate of each iteration has a certain range, which makes the parameters relatively stable.
+
+	Hyperparameter setting value:
+
+	Suggest beta 1 = 0.9, beta 2 = 0.999, ϵ = 10 e - 8
+
+	The practice shows that ADAM is more effective than other adaptive learning methods.
+
+![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/图片2.png)
+![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/图片3.png)
+
 ## Method <a name="Method"></a>
 	If the data is sparse, the adaptive methods should be adopted, i.e., ADAGRAD, ADADELTA, RMSProp, ADAM.
 	
