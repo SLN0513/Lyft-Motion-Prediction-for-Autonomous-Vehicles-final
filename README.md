@@ -62,7 +62,7 @@ which results in the loss
 	
 1. BGD batch gradient descent
 
-2.SGD tochastic gradient descent 
+2. SGD tochastic gradient descent 
 
 3. MBGD minibatch gradient descent
 
