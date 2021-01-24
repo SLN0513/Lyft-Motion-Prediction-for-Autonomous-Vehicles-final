@@ -53,20 +53,20 @@ In addition, we predict confidences c of these K hypotheses. We assume the groun
 ![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/x2.gif)
 
 
-
-
-
-
-
 which results in the loss
+
 ![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/x3.gif)
 
 
 ## Learning section<a name="learning_section"></a>
 1.BGD batch gradient descent
+
 2.SGD tochastic gradient descent 
+
 3.MBGD minibatch gradient descent
+
 4.Learning rate 
+
 Learning rate should be properly chosen, as a small learning rate would lead to a slow convergency and a fast learning rate would make the loss function fluctuate
 
 ## Modeling <a name="modeling"></a>
