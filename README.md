@@ -244,5 +244,5 @@ Cross entropy comes from information theory and is a widely used loss function i
 
 
 ## Further discussion <a name="further_discussion"></a>
-
+This project is the first kaggle project, a lot of difficulties and studies should be overcame in order to purchase for further achievement. It is the start, more and more challenges would be faced. There are several drawbacks for the code, the accuracy and the speed are not enough to control a automobile. Therefore, more studies are required for a better project.
 ![alt text](https://github.com/xuyuan1/Lyft-Motion-Prediction-for-Autonomous-Vehicles/blob/main/rank.png)
