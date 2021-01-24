@@ -45,12 +45,12 @@ We calculate the negative log-likelihood of the ground truth data given the mult
 
 and we predict K hypotheses, represented by means
 
-![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/gif(1).gif)
+![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/gif (1).gif)
 
 In addition, we predict confidences c of these K hypotheses. We assume the ground truth positions to be modeled by a mixture of multi-dimensional independent Normal distributions over time, yielding the likelihood
 
 
-![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/gif(2).gif)
+![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/gif (2).gif)
 
 
 
@@ -59,7 +59,7 @@ In addition, we predict confidences c of these K hypotheses. We assume the groun
 
 
 which results in the loss
-![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/gif(3).gif)
+![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/gif (3).gif)
 
 
 
