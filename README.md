@@ -196,7 +196,8 @@ The Softmax activation function is a normalized exponential function. The output
 ## Loss function <a name="loss_function"></a>
 **Loss function is a very important content in machine learning, which measures the difference between the output value of the model and the target value. In other words, it is an important indicator to evaluate the effect of the model. The smaller the loss function is, the better the robustness of the model is.When training the model in TensorFlow, the loss function tells TensorFlow whether the predicted result is better or worse than the target result. In many cases, sample data and target data for model training are given, and the loss function is to compare the difference between the predicted value and the given target value.**
 
-	**The loss function of regression model**
+
+**The loss function of regression model:**
 
 	L1 is positive then loss function (absolute value loss function)
 
