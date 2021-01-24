@@ -162,8 +162,8 @@ which results in the loss
 ![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/图片2.png)
 ![alt text](https://github.com/SLN0513/Lyft-Motion-Prediction-for-Autonomous-Vehicles-final/blob/main/图片3.png)
 
-**In both cases, Adagrad, Adadelta, RMSProp found the right direction almost quickly and converged quite quickly, while the other methods were either slow or took a lot of detours to find it.
-It can be seen from the figure that the adaptive learning rate method, namely ADAGRAD, ADADELTA, RMSProp, ADAM, is more suitable and has better convergence in this situation.**
+**In both cases, Adagrad, Adadelta, RMSProp found the right direction almost quickly and converged quite quickly, while the other methods were either slow or took a lot of detours to find it.**
+**It can be seen from the figure that the adaptive learning rate method, namely ADAGRAD, ADADELTA, RMSProp, ADAM, is more suitable and has better convergence in this situation.**
 
 ## Method <a name="Method"></a>
 	If the data is sparse, the adaptive methods should be adopted, i.e., ADAGRAD, ADADELTA, RMSProp, ADAM.
