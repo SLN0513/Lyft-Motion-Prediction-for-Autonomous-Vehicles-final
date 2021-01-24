@@ -68,7 +68,7 @@ which results in the loss
 	4.Learning rate 
 
 	Learning rate should be properly chosen, as a small learning rate would lead to a slow convergency and 
-a fast learning rate would make the loss function fluctuate
+	a fast learning rate would make the loss function fluctuate
 
 ## Method <a name="Method"></a>
 
