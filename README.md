@@ -95,8 +95,8 @@ which results in the loss
 	Overall, Adam is the best choice.
 
 	A lot of papers use SGD, or without momentum. SGD can reach a minimum value, but it takes 
-	longer time than other algorithms and can get stuck at saddle points. If faster convergence is needed, or deeper 
-	and more complex neural networks are trained, an adaptive algorithm is needed.
+	longer time than other algorithms and can get stuck at saddle points. If faster convergence is needed, or 
+	deeper and more complex neural networks are trained, an adaptive algorithm is needed.
 ## Modeling <a name="modeling"></a>
 
 # 1 .pytorch_neg_multi_log_likelihood_batch   ...  
